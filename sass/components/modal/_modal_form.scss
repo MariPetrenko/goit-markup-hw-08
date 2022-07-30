@@ -1,0 +1,75 @@
+//form -imput-labal
+.form__faild {
+  display: block;
+  flex-direction: column;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  &.last-child {
+    margin-bottom: 20px;
+  }
+}
+
+.form__faild input {
+  margin: 0;
+  padding-left: 42px;
+  border: 1px solid var(--border-form);
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1, 16;
+  letter-spacing: 0.01em;
+  color: var(--primery-text-color);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animation);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+  }
+}
+
+.form__input__svg {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.form__input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+
+  transition-property: border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animation);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-text-color);
+  }
+  &:focus {
+    outline: var(--accent-text-color);
+  }
+}
+
+.form__icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  transform: translateY(-50%);
+
+  .form__input:hover + &,
+  .form__input:focus + & {
+    fill: var(--accent-text-color);
+  }
+}

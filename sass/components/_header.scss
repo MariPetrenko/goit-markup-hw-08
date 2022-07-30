@@ -1,0 +1,134 @@
+/*шапка страницы*/
+.header {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-bottom: 1px solid #ececec;
+  flex-wrap: nowrap;
+}
+
+/*header-main-nav*/
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+/*Логотип в хедере*/
+
+.header__link {
+  margin-right: 93px;
+  font-family: Raleway;
+  color: var(--heder-logo-color);
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: default;
+  line-height: 1.2;
+}
+
+.header__accent {
+  color: var(--accent-text-color);
+}
+
+.nav__page {
+  display: flex;
+}
+
+.header__nav__list {
+  margin-right: 50px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.header__nav {
+  color: var(--titel-text-color);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+
+  position: relative;
+
+  font-weight: 500;
+  text-decoration: none;
+
+  line-height: 1.14;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+  &.current {
+    color: var(--accent-text-color);
+  }
+  &.header__nav::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-text-color);
+
+    opacity: 0;
+    transition: opacity 250ms var(--animation);
+    border-radius: 2px;
+  }
+  &:hover::after {
+    opacity: 1;
+    border-radius: 4px;
+  }
+  &.current::after {
+    opacity: 1;
+    border-radius: 4px;
+  }
+}
+/* .heder-contact-list {}*/
+
+.header__contact__items {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.main__nav {
+  display: flex;
+}
+
+.header__list {
+  margin-left: 50px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.header__contact {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--primery-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animation);
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}
+
+.header__icon {
+  display: inline-block;
+  margin-right: 10px;
+  fill: currentColor;
+}

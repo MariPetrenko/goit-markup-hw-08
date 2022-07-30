@@ -1,0 +1,33 @@
+//checkbox
+.form__checkbox__label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.form__checkbox {
+  appearance: none;
+
+  &:checked + .form__chec__ikon {
+    background-color: var(--accent-text-color);
+
+    background-image: url(../imeges/icon/icon\ check.svg);
+    background-size: contain;
+    background-origin: border-box;
+    border: var(--accent-text-color);
+  }
+}
+
+.form__chec__ikon {
+  display: flex;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--titel-text-color);
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+.form__chec__link {
+  color: var(--accent-text-color);
+}

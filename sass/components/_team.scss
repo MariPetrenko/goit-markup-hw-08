@@ -1,0 +1,47 @@
+/*Команда   */
+.team {
+  background-color: var(--filter-btn-tim-fon);
+}
+
+.team__titel {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.16;
+  &,
+  .titel {
+    color: var(--titel-text-color);
+  }
+}
+
+.team__list {
+  display: flex;
+}
+
+.team__section {
+  text-align: center;
+  margin-right: 30px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: var(--box-shedov);
+  background: var(--main-background-color);
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.team__img {
+  margin-bottom: 30px;
+}
+.team__titel__person {
+  margin-bottom: 10px;
+  color: var(--titel-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.team__position {
+  margin-bottom: 16px;
+  color: var(--primery-text-color);
+  font-size: 16px;
+  line-height: 1.18;
+}

@@ -1,0 +1,55 @@
+/*Особенности*/
+.features {
+  width: 1200px;
+  margin: auto;
+}
+
+.features__section {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.features__list {
+  letter-spacing: 0.03em;
+  margin-right: 30px;
+  width: 270px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.features__list__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--filter-btn-tim-fon);
+  border-radius: 4px;
+  padding: 0;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+}
+
+.features__icon {
+  margin: 0px;
+  width: 70px;
+  height: 70px;
+}
+
+.titel {
+  margin-bottom: 10px;
+  color: var(--titel-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features__about {
+  color: var(--primery-text-color);
+  line-height: 1.71;
+  letter-spacing: 0, 03em;
+}

@@ -1,0 +1,59 @@
+/*Подвал */
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--section-fond-color);
+}
+
+.footer__logo {
+  display: block;
+  font-family: Raleway;
+  color: var(--text-color-logo-adres-btn);
+  font-weight: bold;
+  text-decoration: none;
+  cursor: default;
+  font-size: 26px;
+  line-height: 1.19;
+  margin-bottom: 20px;
+}
+
+.footer__logo__accent {
+  color: var(--accent-text-color);
+}
+
+.footer__contact__list {
+  margin-bottom: 9px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.footer__contact__adress {
+  color: var(--text-color-logo-adres-btn);
+  text-decoration: none;
+
+  line-height: 1.71;
+  font-style: normal;
+  display: block;
+}
+
+.footer__contact {
+  text-decoration: none;
+  line-height: 1.71;
+  font-style: normal;
+  display: block;
+  color: var(--text-footer);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animation);
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}

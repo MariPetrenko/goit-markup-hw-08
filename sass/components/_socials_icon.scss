@@ -1,0 +1,27 @@
+/* Иконки соц.сетей*/
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 16px 30px 30px 30px;
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  fill: var(--icon-color);
+
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animation);
+
+  &:hover,
+  &:focus {
+    fill: var(--text-color-logo-adres-btn);
+    background-color: var(--accent-text-color);
+  }
+}

@@ -1,0 +1,64 @@
+/*Подписка на рассылку*/
+.sub {
+  margin-left: 95px;
+}
+
+.footer__sub__titel {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-background-color);
+}
+
+.footer__sub {
+  outline: transparent;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  border-radius: 4px;
+  color: var(--main-background-color);
+  background-color: var(--section-fond-color);
+  border: 1px solid var(--border-shedov);
+}
+
+.footer__sub__grup {
+  display: flex;
+}
+
+.footer__sub__btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  background: var(--accent-text-color);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  color: var(--main-background-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-right: 0;
+  border: transparent;
+  cursor: pointer;
+}
+
+/* margin-top: 0px;
+  padding: 0px;
+  width: 200px;
+  height: 50px;
+  border:none;
+  border-radius: 4px;
+  background-color: var(--accent-text-color);
+   */
+
+.footer__btn__svg {
+  width: 24px;
+  height: 24px;
+}

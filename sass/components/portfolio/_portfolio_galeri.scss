@@ -1,0 +1,102 @@
+/* Галерея портфолио */
+.portfolio__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio__list > .portfolio__section {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.portfolio__section:nth-child(3n) {
+  margin-right: 0;
+}
+.portfolio__section:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.portfolio__link {
+  display: block;
+  text-decoration: none;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animation);
+
+  &:hover,
+  &:focus {
+    box-shadow: var(--link-shadov);
+  }
+
+  &:hover .portfolio__thumb::before {
+    transform: translateY(0);
+  }
+
+  &:hover .portfolio__overlay {
+    transform: translateY(0);
+  }
+}
+
+.portfolio__thumb {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--portfolio-tumb);
+    transform: translateY(100%);
+    transition: transform 250ms var(--animation);
+  }
+}
+
+.portfolio__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform: translateY(100%);
+  transition: transform 250ms var(--animation);
+}
+
+.portfolio__text {
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--main-background-color);
+}
+
+.portfolio__card {
+  border-left: 1px solid var(--border-portfolio);
+  border-right: 1px solid var(--border-portfolio);
+  border-bottom: 1px solid var(--border-portfolio);
+  padding: 20px 24px;
+}
+
+.portfolio__titel {
+  margin-bottom: 4px;
+  color: var(--titel-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio__desc {
+  color: var(--primery-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+}

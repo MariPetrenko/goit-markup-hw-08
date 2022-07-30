@@ -1,0 +1,62 @@
+//stails modal
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  width: 528px;
+  background-color: var(--main-background-color);
+
+  box-shadow: var(--box-shedov-tim-form-btn);
+  border-radius: 4px;
+  &:hover,
+  &:focus {
+    border-color: var(--accent-text-color);
+  }
+}
+
+.modal__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--border-btn);
+  border-radius: 50%;
+  background: var(--main-background-color);
+  cursor: pointer;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animation);
+  &:hover,
+  &:focus {
+    fill: var(--accent-text-color);
+  }
+}
+
+.modal__icon {
+  width: 11px;
+  height: 11px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animation);
+  &:hover,
+  &:focus {
+    fill: var(--logo-btn-hover);
+  }
+}
+.modal__titel {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--titel-text-color);
+}

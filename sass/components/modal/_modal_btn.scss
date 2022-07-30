@@ -1,0 +1,52 @@
+//modal btn
+.form__chec__btn {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  background-color: var(--accent-text-color);
+  color: var(--text-color-logo-adres-btn);
+  border-radius: 4px;
+  outline: var(--accent-text-color);
+  border: 0;
+
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--logo-btn-hover);
+    box-shadow: var(--box-shedov-tim-form-btn);
+  }
+}
+
+/* 
+.backdrop{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(43, 165, 59, 0.06);
+}
+
+.backdrop.is-hidden{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate();
+} */
