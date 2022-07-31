@@ -1,9 +1,26 @@
 /*шапка страницы*/
 .header {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
-  flex-wrap: nowrap;
+
+  // flex-wrap: nowrap;
+
+  @media screen and(min-wids: 768px) {
+    width: 768px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+.main__nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+
+  // @media screen and(max-width: 767px) {
+  //   justify-content: space-between;
+  // }
 }
 
 /*header-main-nav*/
@@ -15,6 +32,8 @@
 /*Логотип в хедере*/
 
 .header__link {
+  margin-top: 16px;
+  margin-bottom: 16px;
   margin-right: 93px;
   font-family: Raleway;
   color: var(--heder-logo-color);
@@ -34,7 +53,11 @@
 }
 
 .header__nav__list {
+  display: none;
   margin-right: 50px;
+  @media screen and(min-width: 768px) {
+    min-width: 768px;
+  }
   &:last-child {
     margin-right: 0;
   }
@@ -96,12 +119,13 @@
   align-items: center;
 }
 
-.main__nav {
-  display: flex;
-}
-
 .header__list {
+  display: none;
   margin-left: 50px;
+
+  @media screen and(min-width: 768px) {
+    min-width: 768px;
+  }
   &:first-child {
     margin-left: 0;
   }

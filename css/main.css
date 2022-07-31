@@ -76,20 +76,45 @@ ul {
 }
 
 .container {
-  width: 1200px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
 }
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 
 /*шапка страницы*/
 .header {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+}
+@media screen and (min-wids: 768px) {
+  .header {
+    width: 768px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+.main__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
 }
 
 /*header-main-nav*/
@@ -104,6 +129,8 @@ ul {
 
 /*Логотип в хедере*/
 .header__link {
+  margin-top: 16px;
+  margin-bottom: 16px;
   margin-right: 93px;
   font-family: Raleway;
   color: var(--heder-logo-color);
@@ -125,7 +152,13 @@ ul {
 }
 
 .header__nav__list {
+  display: none;
   margin-right: 50px;
+}
+@media screen and (min-width: 768px) {
+  .header__nav__list {
+    min-width: 768px;
+  }
 }
 .header__nav__list:last-child {
   margin-right: 0;
@@ -187,14 +220,14 @@ ul {
           align-items: center;
 }
 
-.main__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .header__list {
+  display: none;
   margin-left: 50px;
+}
+@media screen and (min-width: 768px) {
+  .header__list {
+    min-width: 768px;
+  }
 }
 .header__list:first-child {
   margin-left: 0;
@@ -229,6 +262,28 @@ ul {
   display: inline-block;
   margin-right: 10px;
   fill: currentColor;
+}
+
+.menu-btn {
+  display: block;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: transparent;
+  outline: transparent;
+}
+.menu-btn__icon {
+  width: 40px;
+  height: 40px;
+}
+.menu-btn__icon-open {
+  opacity: 1;
+  width: 24px;
+  height: 16px;
+}
+.menu-btn__icon-close {
+  opacity: 0;
 }
 
 /*Логотип страницы*/
