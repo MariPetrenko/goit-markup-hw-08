@@ -31,7 +31,12 @@
             ><span class="header__accent">Web</span>Studio</a
           >
 
-          <button class="menu-btn" type="button" aria-label="кнопка меню">
+          <button class="menu-btn"
+                   type="button" 
+                   aria-label="кнопка меню"
+                   aria-expanded="false"
+                   data-menu-button
+                   >
           <svg class="menu-btn__icon" >
             <use class="menu-btn__icon-open" href="./imeges/icon/icons.svg#icon-menu_open"></use>
             <use class="menu-btn__icon-close" href="./imeges/icon/icons.svg#icon-menu-close"></use>
@@ -73,7 +78,7 @@
 
     <!--Основная часть страници-->
     <main>
-      <!--Логотип страницы-->
+      <!-- Логотип страницы -->
       <!-- <section class="logo__section">
         <div class="container">
           <h1 class="logo__titel">Эффективные решения для вашего бизнеса</h1>
@@ -399,7 +404,7 @@
       </section> -->
     </main>
 
-    <!--Подвал-->
+    <!-- Подвал -->
     <!-- <footer class="footer">
       <div class="container">
         <div class="footer__section">
@@ -421,8 +426,8 @@
               </li>
             </ul>
           </address>
-        </div>
-        <!--Соц.сети подвл-->
+        </div> -->
+        <!-- Соц.сети подвл -->
 
         <!-- <div class="footer__social__list">
           <p class="footer__titel__link">Присоединяйтесь</p>
@@ -544,8 +549,77 @@
     </div> -->
 
     <!--Мобильное меню-->
+     <div class="mobile-overlay is-open" data-menu>
+      <div class="mobile-menu">
+        <nav class="mobile-nav">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="">Студия</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="">Портфолио</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mobile-menu__contacts">
+          <a class="mobile-menu__link" href="tel:+380991111111"
+            >+38 099 111 11 11</a
+          >
+           <a class="mobile-menu__link" href="mailto:info@example.com"
+            >info@example.com</a
+          >
+        </div>
+
+        <ul class="socials-mobile">
+          <li class="socials-mobile__item">
+            <a
+              class="socials-mobile__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+
+          <li class="socials-mobile__item">
+            <a
+              class="ssocials-mobile__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Twitter</a
+            >
+          </li>
+
+          <li class="socials-mobile__item">
+            <a
+              class="socials-mobile__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+          </li>
+
+          <li class="socials-mobile__item">
+            <a
+              class="socials-mobile__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Linkedin</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
     
     <!--<script src="./js/modal.js"></script>-->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile_menu.js"></script>
   </body>
 </html>
