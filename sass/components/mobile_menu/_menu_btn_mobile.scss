@@ -8,20 +8,15 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
+  z-index: 99;
 
   background-color: transparent;
   border: transparent;
   outline: transparent;
-  z-index: 99;
 
   transition-property: fill, border-color;
   transition-duration: 250ms;
   transition-timing-function: var(--animation);
-
-  &:hover,
-  &:focus {
-    fill: var(--accent-text-color);
-  }
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -41,6 +36,11 @@
       opacity: 1;
     }
   }
+}
+
+.menu-btn:hover,
+.menu-btn:focus {
+  fill: var(--accent-text-color);
 }
 
 .menu-btn.is-active .menu-btn__icon-open {

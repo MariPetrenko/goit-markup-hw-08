@@ -1,6 +1,6 @@
 @import './container';
 @import './header';
-@import './mobile_menu/modul';
+
 @import './logo';
 @import './features';
 @import './gallery';
@@ -10,3 +10,10 @@
 @import './footer/module';
 @import './modal/module';
 @import './portfolio/module';
+
+// мобильное меню
+@import './mobile_menu/modul';
+// мобильное меню end
+
+// desctop меню
+@import './desctop/module'; // desctop меню end
