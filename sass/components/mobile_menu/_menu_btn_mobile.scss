@@ -1,6 +1,4 @@
 .menu-btn {
-  position: relative;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,13 +25,13 @@
     height: 40px;
 
     &-open {
-      opacity: 0;
+      opacity: 1;
       width: 24px;
       height: 16px;
     }
 
     &-close {
-      opacity: 1;
+      opacity: 0;
     }
   }
 }
@@ -43,10 +41,18 @@
   fill: var(--accent-text-color);
 }
 
-.menu-btn.is-open .menu-btn__icon-open {
+// .menu-btn.is-open .menu-btn__icon-open {
+//   opacity: 1;
+// }
+
+// .menu-btn.is-open .menu-btn__icon-close {
+//   opacity: 0;
+// }
+
+.menu-btn__icon.is-active .menu-btn__icon-open {
   opacity: 1;
 }
 
-.menu-btn.is-open .menu-btn__icon-close {
+.menu-btn__icon.is-active .menu-btn__icon-close {
   opacity: 0;
 }

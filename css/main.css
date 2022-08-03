@@ -76,7 +76,7 @@ ul {
 }
 
 .container {
-  max-width: 480px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
@@ -238,7 +238,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .header__contact__items {
     gap: 10px;
     margin-left: 84px;
@@ -1280,7 +1280,6 @@ ul {
 }
 
 .menu-btn {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1315,12 +1314,12 @@ ul {
   height: 40px;
 }
 .menu-btn__icon-open {
-  opacity: 0;
+  opacity: 1;
   width: 24px;
   height: 16px;
 }
 .menu-btn__icon-close {
-  opacity: 1;
+  opacity: 0;
 }
 
 .menu-btn:hover,
@@ -1328,11 +1327,11 @@ ul {
   fill: var(--accent-text-color);
 }
 
-.menu-btn.is-open .menu-btn__icon-open {
+.menu-btn__icon.is-active .menu-btn__icon-open {
   opacity: 1;
 }
 
-.menu-btn.is-open .menu-btn__icon-close {
+.menu-btn__icon.is-active .menu-btn__icon-close {
   opacity: 0;
 }
 
