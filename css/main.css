@@ -95,8 +95,7 @@ ul {
 
 /*шапка страницы*/
 .header {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 0;
   border-bottom: 1px solid #ececec;
 }
 @media screen and (min-wids: 768px) {
@@ -104,6 +103,9 @@ ul {
     width: 768px;
     padding-top: 0px;
     padding-bottom: 0px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -1326,11 +1328,11 @@ ul {
   fill: var(--accent-text-color);
 }
 
-.menu-btn.is-active .menu-btn__icon-open {
+.menu-btn.is-open .menu-btn__icon-open {
   opacity: 1;
 }
 
-.menu-btn.is-active .menu-btn__icon-close {
+.menu-btn.is-open .menu-btn__icon-close {
   opacity: 0;
 }
 
