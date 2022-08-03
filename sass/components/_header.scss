@@ -34,7 +34,7 @@
 .header__link {
   margin-top: 16px;
   margin-bottom: 16px;
-  margin-right: 93px;
+
   font-family: Raleway;
   color: var(--heder-logo-color);
   font-size: 26px;
@@ -42,6 +42,14 @@
   text-decoration: none;
   cursor: default;
   line-height: 1.2;
+
+  @media screen and (min-width: 768px) {
+    padding-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-right: 93px;
+  }
 }
 
 .header__accent {
@@ -116,30 +124,26 @@
 .header__contact__items {
   margin-left: auto;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
 
-  @media screen and(min-width: 1200px) {
-    flex-direction: row;
+  @media screen and (min-width: 768px) {
+    gap: 10px;
+    margin-left: 84px;
   }
 }
 
 .header__list {
-  margin-left: 50px;
+  margin-left: 30px;
 
   @media screen and(max-width: 767px) {
     display: none;
-  }
-  &:first-child {
-    margin-left: 0;
   }
 }
 
 .header__contact {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--primery-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -149,9 +153,15 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--animation);
+
   &:hover,
   &:focus {
     color: var(--accent-text-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 

@@ -138,7 +138,6 @@ ul {
 .header__link {
   margin-top: 16px;
   margin-bottom: 16px;
-  margin-right: 93px;
   font-family: Raleway;
   color: var(--heder-logo-color);
   font-size: 26px;
@@ -146,6 +145,16 @@ ul {
   text-decoration: none;
   cursor: default;
   line-height: 1.2;
+}
+@media screen and (min-width: 768px) {
+  .header__link {
+    padding-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__link {
+    padding-right: 93px;
+  }
 }
 
 .header__accent {
@@ -221,33 +230,26 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header__contact__items {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    gap: 10px;
+    margin-left: 84px;
   }
 }
 
 .header__list {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 @media screen and (max-width: 767px) {
   .header__list {
     display: none;
   }
-}
-.header__list:first-child {
-  margin-left: 0;
 }
 
 .header__contact {
@@ -257,8 +259,6 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--primery-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -273,6 +273,12 @@ ul {
 }
 .header__contact:hover, .header__contact:focus {
   color: var(--accent-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .header__contact {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .header__icon {
