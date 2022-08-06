@@ -7,6 +7,8 @@
   height: 40px;
   cursor: pointer;
   z-index: 99;
+  position: absolute;
+  right: 0;
 
   background-color: transparent;
   border: transparent;
@@ -19,21 +21,26 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+.menu-btn__icon {
+  width: 40px;
+  height: 40px;
+}
 
-  &__icon {
-    width: 40px;
-    height: 40px;
+.menu-btn__icon-open {
+  opacity: 1;
+  width: 24px;
+  height: 16px;
+}
 
-    &-open {
-      opacity: 1;
-      width: 24px;
-      height: 16px;
-    }
-
-    &-close {
-      opacity: 0;
-    }
-  }
+.menu-btn__icon-close {
+  opacity: 0;
+}
+.menu-btn.is-active .menu-btn__icon-open {
+  opacity: 0;
+}
+.menu-btn.is-active .menu-btn__icon-close {
+  opacity: 1;
 }
 
 .menu-btn:hover,
