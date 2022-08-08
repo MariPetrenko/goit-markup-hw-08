@@ -384,7 +384,6 @@ ul {
 
 /*Особенности*/
 .features {
-  width: 1200px;
   margin: auto;
 }
 
@@ -395,14 +394,23 @@ ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .features__list {
+  width: 100%;
   letter-spacing: 0.03em;
-  -ms-flex-preferred-size: cala(900px- 90px/4);
-      flex-basis: cala(900px- 90px/4);
+}
+@media screen and (min-width: 768px) {
+  .features__list {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__list {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .features__list__icon {
@@ -419,7 +427,6 @@ ul {
   border-radius: 4px;
   padding: 0;
   margin-bottom: 30px;
-  width: 270px;
   height: 120px;
 }
 
