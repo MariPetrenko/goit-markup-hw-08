@@ -76,6 +76,7 @@ ul {
 }
 
 .container {
+  max-width: 480px;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
@@ -343,15 +344,15 @@ ul {
 }
 
 .logo__titel {
-  width: 696px;
+  max-width: 360px;
+  width: 100%;
   margin: auto;
   color: var(--text-color-logo-adres-btn);
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
-  line-height: 1.36;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   font-family: Roboto;
-  text-transform: uppercase;
 }
 
 .logo__btn {
@@ -391,17 +392,17 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .features__list {
   letter-spacing: 0.03em;
-  margin-right: 30px;
-  width: 270px;
-}
-.features__list:last-child {
-  margin-right: 0;
+  -ms-flex-preferred-size: cala(900px- 90px/4);
+      flex-basis: cala(900px- 90px/4);
 }
 
 .features__list__icon {
