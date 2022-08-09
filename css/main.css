@@ -53,8 +53,14 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 h1,
@@ -454,7 +460,13 @@ ul {
 
 /*Примеры робот*/
 .gallery__section {
+  display: none;
   padding-top: 0;
+}
+@media screen and (min-width: 1200px) {
+  .gallery__section {
+    display: block;
+  }
 }
 
 .gallery__list__foto {
@@ -512,10 +524,17 @@ ul {
 }
 
 .team__titel {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
-  font-size: 36px;
-  line-height: 1.16;
+}
+@media screen and (min-width: 1200px) {
+  .team__titel {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 .team__titel,
 .team__titel .titel {
@@ -526,9 +545,12 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .team__section {
+  width: 100%;
   text-align: center;
   margin-right: 30px;
   border-radius: 0px 0px 4px 4px;
@@ -538,6 +560,18 @@ ul {
 }
 .team__section:last-child {
   margin-right: 0;
+}
+@media screen and (min-width: 768px) {
+  .team__section {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__section {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .team__img {
@@ -599,18 +633,49 @@ ul {
 
 /*Постоянные клиенты*/
 .clients__titel {
-  margin-bottom: 50px;
   text-align: center;
-  font-size: 36px;
-  line-height: 1.16;
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.17;
   color: var(--titel-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .clients__titel {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
+}
+
+.clients__cards {
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .clients__cards {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__cards {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__cards {
+    -ms-flex-preferred-size: calc((100% - 150px) / 6);
+        flex-basis: calc((100% - 150px) / 6);
+  }
 }
 
 .clients__link {

@@ -143,7 +143,7 @@
 
       <!--Примеры работ-->
 
-      <!-- <section class="gallery__section section">
+      <section class="gallery__section section">
         <div class="container">
           <h2 class="gallery__titel">Чем мы занимаемся</h2>
           <ul class="gallery__list__foto">
@@ -175,21 +175,59 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--Команда-->
 
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="team__titel">Наша команда</h2>
           <ul class="team__list">
             <li class="team__section">
-              <img
-                class="team__img"
-                src="./imeges/card1.jpg"
-                alt="Портрет парня тридцати лет в коричневой рубашке"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./imeges/team/designer_lg.webp 1x, ./imeges/team/designer_lg@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="imege/jpeg"
+                />
+
+                <source
+                  srcset="./imeges/team/designer_lg.jpeg 1x, ./imeges/team/designer_lg@2x.jpeg 2x"
+                  media="(min-width: 1200px)"
+                  type="imege/jpeg"
+                />
+
+                <source
+                  srcset="./imeges/team/designer_md.webp 1x, ./imeges/team/designer_md@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="imege/jpeg"
+                />
+
+                <source
+                  srcset="./imeges/team/designer_md.jpeg 1x, ./imeges/team/designer_md@2x.jpeg 2x"
+                  media="(min-width: 768px)"
+                  type="imege/jpeg"
+                />
+
+                <source
+                  srcset="./imeges/team/designer_sm.webp 1x, ./imeges/team/designer_sm@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="imege/jpeg"
+                />
+                <source
+                  srcset="./imeges/team/designer_sm@2x.jpeg 2x"
+                  media="(max-width: 767px)"
+                  type="imege/jpeg"
+                />
+
+                <img
+                  class="team__img"
+                  src="./imeges/team/designer_sm.jpg"
+                  alt="Портрет парня тридцати лет в коричневой рубашке"
+                  width="270"
+                />
+              </picture>
+
               <div class="team__card">
                 <h3 class="team__titel__person">Игорь Демьяненко</h3>
                 <p class="team__position">Product Designer</p>
@@ -226,12 +264,49 @@
               </div>
             </li>
             <li class="team__section">
-              <img
-                class="team__img"
-                src="./imeges/card2.jpg"
-                alt="Портрет Молодая красивая блондинка в черном пиджаке"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./imeges/team/frontend_lg.webp 1x, ./imeges/team/frontend_lg@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="imege/webp"
+                />
+
+                <source
+                  srcset="./imeges/team/frontend_lg.jpeg 1x, ./imeges/team/frontend_lg@2x.jpeg 2x"
+                  media="(min-width: 1200px)"
+                  type="imege/jpeg"
+                />
+
+                <source
+                  srcset="./imeges/team/frontend_md.webp 1x, ./imeges/team/frontend_md@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="imege/webp"
+                />
+
+                <source
+                  srcset="./imeges/team/frontend_md.jpeg 1x, ./imeges/team/frontend_md@2x.jpeg 2x"
+                  media="(min-width: 768px)"
+                  type="imege/jpeg"
+                />
+
+                <source
+                  srcset="./imeges/team/frontend_sm.webp 1x, ./imeges/team/frontend_sm@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="imege/webp"
+                />
+                <source
+                  srcset="./imeges/team/frontend_sm@2x.jpeg 2x"
+                  media="(max-width: 767px)"
+                  type="imege/jpeg"
+                />
+
+                <img
+                  class="team__img"
+                  src="./imeges/team/frontend_sm.jpg"
+                  alt="Портрет Молодая красивая блондинка в черном пиджаке"
+                  width="270"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__titel__person">Ольга Репина</h3>
                 <p class="team__position">Frontend Developer</p>
@@ -268,12 +343,49 @@
               </div>
             </li>
             <li class="team__section">
-              <img
-                class="team__img"
-                src="./imeges/card3.jpg"
-                alt="Портрет. Веселый брюнет в голубой рубашке"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./imeges/team/marketing_lg.webp 1x, ./imeges/team/marketing_lg@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="imege/webp"
+                />
+
+                <source
+                  srcset="./imeges/team/marketing_lg.jpeg 1x, ./imeges/team/marketing_lg@2x.jpeg 2x"
+                  media="(min-width: 1200px)"
+                  type="imege/jpeg"
+                />
+
+                <source
+                  srcset="./imeges/team/marketing_md.webp 1x, ./imeges/team/marketing_md@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="imege/webp"
+                />
+
+                <source
+                  srcset="./imeges/team/marketing_md.jpeg 1x, ./imeges/team/marketing_md@2x.jpeg 2x"
+                  media="(min-width: 768px)"
+                  type="imege/jpeg"
+                />
+
+                <source
+                  srcset="./imeges/team/marketing_sm.webp 1x, ./imeges/team/marketing_sm@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="imege/webp"
+                />
+                <source
+                  srcset="./imeges/team/marketing_sm@2x.jpeg 2x"
+                  media="(max-width: 767px)"
+                  type="imege/jpeg"
+                />
+                <img
+                  class="team__img"
+                  src="./imeges/team/marketing_sm.jpg"
+                  alt="Портрет. Веселый брюнет в голубой рубашке"
+                  width="270"
+                />
+              </picture>
+
               <div class="team__card">
                 <h3 class="team__titel__person">Николай Тарасов</h3>
                 <p class="team__position">Marketing</p>
@@ -310,12 +422,49 @@
               </div>
             </li>
             <li class="team__section">
-              <img
-                class="team__img"
-                src="./imeges/card4.jpg"
-                alt="портрет парня в черной рубаке на улице"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./imeges/team/ui_lg.webp 1x, ./imeges/team/ui_lg@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="imege/webp"
+                />
+
+                <source
+                  srcset="./imeges/team/ui_lg.jpeg 1x, ./imeges/team/ui_lg@2x.jpeg 2x"
+                  media="(min-width: 1200px)"
+                  type="imege/jpeg"
+                />
+
+                <source
+                  srcset="./imeges/team/ui_md.webp 1x, ./imeges/team/ui_md@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="imege/webp"
+                />
+
+                <source
+                  srcset="./imeges/team/ui_md.jpeg 1x, ./imeges/team/ui_md@2x.jpeg 2x"
+                  media="(min-width: 768px)"
+                  type="imege/jpeg"
+                />
+
+                <source
+                  srcset="./imeges/team/ui_sm.webp 1x, ./imeges/team/ui_sm@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="imege/webp"
+                />
+                <source
+                  srcset="./imeges/team/ui_sm@2x.jpeg 2x"
+                  media="(max-width: 767px)"
+                  type="imege/jpeg"
+                />
+
+                <img
+                  class="team__img"
+                  src="./imeges/team/ui_sm.jpg"
+                  alt="портрет парня в черной рубаке на улице"
+                  width="270"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__titel__person">Михаил Ермаков</h3>
                 <p class="team__position">UI Designer</p>
@@ -353,11 +502,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--Постоянные клиенты-->
 
-      <!-- <section class="clients section">
+      <section class="clients section">
         <div class="container">
           <h2 class="clients__titel">Постоянные клиенты</h2>
           <ul class="clients__list">
@@ -406,15 +555,15 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- Подвал -->
 
-    <!-- <footer class="footer">
+     <footer class="footer">
       <!-- Контакты футер -->
 
-    <!-- <div class="container">
+    <div class="container">
         <div class="footer__section">
           <a class="footer__logo" lang="en" href="./index.html">
             <span class="footer__logo__accent">Web</span>Studio</a
@@ -434,7 +583,7 @@
               </li>
             </ul>
           </address>
-        </div> -->
+        </div> 
 
     <!-- Соц.сети подвл -->
 
