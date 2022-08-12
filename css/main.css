@@ -360,6 +360,13 @@ ul {
   letter-spacing: 0.06em;
   font-family: Roboto;
 }
+@media screen and (min-width: 1200px) {
+  .logo__titel {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
 
 .logo__btn {
   margin-top: 30px;
@@ -547,12 +554,12 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 30px;
 }
 
 .team__section {
   width: 100%;
   text-align: center;
-  margin-right: 30px;
   border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: var(--box-shedov);
           box-shadow: var(--box-shedov);
@@ -659,7 +666,7 @@ ul {
 .clients__cards {
   width: 100%;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .clients__cards {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
