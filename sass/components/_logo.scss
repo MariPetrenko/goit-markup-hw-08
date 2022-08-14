@@ -16,6 +16,11 @@ $logo-imeg-gradient: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 4
   background-size: cover;
   background-repeat: no-repeat;
 
+  @media screen and(max-width: 767px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
   background-image: $logo-imeg-gradient, url('../../imeges/hero/header_sm.png');
   background-image: -webkit-image-set(url('../../imeges/hero/header_sm.webp') 1x);
 
@@ -47,7 +52,6 @@ $logo-imeg-gradient: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 4
 
 .logo__titel {
   max-width: 360px;
-  width: 100%;
   margin: auto;
   color: var(--text-color-logo-adres-btn);
   font-size: 26px;
@@ -55,6 +59,7 @@ $logo-imeg-gradient: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 4
   line-height: 1.62;
   letter-spacing: 0.06em;
   font-family: Roboto;
+  text-transform: uppercase;
 
   @media screen and (min-width: 1200px) {
     max-width: 696px;

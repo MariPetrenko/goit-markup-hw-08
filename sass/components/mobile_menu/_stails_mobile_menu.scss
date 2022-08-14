@@ -1,82 +1,173 @@
 .mobile-menu {
-  width: 100%;
-  height: 100%;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  display: flex;
+  flex-wrap: wrap;
 
-  &__contacts {
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 32px;
-    flex-direction: column;
-    margin-bottom: 64px;
-  }
+  flex-direction: column;
 }
-
-.mobile-nav {
-  margin-bottom: 302px;
-
-  &__item {
-    margin-bottom: 32px;
-
-    &.last-child {
-      margin-bottom: 0;
-    }
-  }
-}
-
-.mobile-nav__link {
+.mobile-nav__item {
+  margin-bottom: 32px;
+  font-style: normal;
   font-weight: 500;
   font-size: 40px;
-  line-height: 1.175;
-  text-align: center;
+  line-height: 1.17;
   letter-spacing: 0.02em;
-  text-decoration: none;
+}
+.mobile-nav__link {
   color: var(--titel-text-color);
+  text-decoration: none;
+}
 
-  &:hover,
-  &:focus {
-    color: var(--accent-text-color);
-  }
+.mobile-menu__grop {
+  margin-top: auto;
+}
+.mobile-menu__contacts {
+  margin-bottom: 64px;
+}
+
+.mobile-menu__item {
+  margin-bottom: 32px;
 }
 
 .mobile-menu__phon {
+  font-style: normal;
   font-weight: 500;
   font-size: 34px;
-  line-height: 1.175;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--accent-text-color);
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    font-size: 29px;
+    font-size: 24px;
   }
 }
 
 .mobile-menu__link {
+  font-style: normal;
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.175;
+  font-size: 24px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--primery-text-color);
-
-  @media screen and (min-width: 320px) and (max-width: 480px) {
-    font-size: 29px;
-  }
+  color: var(--titel-text-color);
 }
 
 .socials-mobile {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-top: -10px;
+  margin-right: -10px;
 
-  &__link {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
-    letter-spacing: 0.02em;
-    color: var(--accent-text-color);
-  }
+  letter-spacing: 0.02em;
 }
+
+.socials-mobile__item {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.socials-mobile__link {
+  display: block;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+  text-decoration: none;
+  color: var(--accent-text-color);
+}
+
+.socials-mobile__item:last-child .socials-mobile__link {
+  padding: 0;
+  border-right: none;
+}
+
+// .mobile-menu {
+//   width: 100%;
+//   height: 100%;
+//   padding-top: 48px;
+//   padding-bottom: 48px;
+//   padding-left: 40px;
+
+//   &__contacts {
+//     display: inline-flex;
+//     flex-wrap: wrap;
+//     gap: 32px;
+//     flex-direction: column;
+//     margin-bottom: 64px;
+//   }
+// }
+
+// .mobile-nav {
+//   margin-bottom: 302px;
+
+//   &__item {
+//     margin-bottom: 32px;
+
+//     &.last-child {
+//       margin-bottom: 0;
+//     }
+//   }
+// }
+
+// .mobile-nav__link {
+//   font-weight: 500;
+//   font-size: 40px;
+//   line-height: 1.175;
+//   text-align: center;
+//   letter-spacing: 0.02em;
+//   text-decoration: none;
+//   color: var(--titel-text-color);
+
+//   &:hover,
+//   &:focus {
+//     color: var(--accent-text-color);
+//   }
+// }
+// .mobile-menu__phon {
+//   font-weight: 500;
+//   font-size: 34px;
+//   line-height: 1.175;
+//   letter-spacing: 0.02em;
+//   text-decoration: none;
+//   color: var(--accent-text-color);
+
+//   @media screen and (min-width: 320px) and (max-width: 480px) {
+//     font-size: 29px;
+//   }
+// }
+
+// .mobile-menu__link {
+//   font-weight: 500;
+//   font-size: 34px;
+//   line-height: 1.175;
+//   letter-spacing: 0.02em;
+//   text-decoration: none;
+//   color: var(--primery-text-color);
+
+//   @media screen and (min-width: 320px) and (max-width: 480px) {
+//     font-size: 29px;
+//   }
+// }
+
+// .socials-mobile {
+//   display: inline-flex;
+//   flex-wrap: wrap;
+//   gap: 20px;
+
+//   &__link {
+//     font-weight: 500;
+//     font-size: 18px;
+//     line-height: 1.22;
+//     letter-spacing: 0.02em;
+//     color: var(--accent-text-color);
+//   }
+// }

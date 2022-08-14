@@ -36,6 +36,10 @@
 .menu-btn__icon-close {
   opacity: 0;
 }
+
+.menu-btn.is-active {
+  position: fixed;
+}
 .menu-btn.is-active .menu-btn__icon-open {
   opacity: 0;
 }
