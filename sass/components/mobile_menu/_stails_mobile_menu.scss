@@ -21,6 +21,15 @@
 .mobile-nav__link {
   color: var(--titel-text-color);
   text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
 }
 
 .mobile-menu__grop {

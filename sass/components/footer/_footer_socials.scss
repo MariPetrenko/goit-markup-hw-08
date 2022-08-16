@@ -1,6 +1,14 @@
 /*Социальные сети футер*/
 .footer__social__list {
-  margin-left: 70px;
+  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
 
 .footer__titel__link {
@@ -15,12 +23,9 @@
 
 .footer__socials {
   display: flex;
+  justify-content: center;
   gap: 10px;
 }
-
-/* .footer_link_list {
-  margin-right: 10px;
-} */
 
 .footer__link__list:last-child {
   margin-right: 0px;

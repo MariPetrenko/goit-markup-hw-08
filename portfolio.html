@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="A description of the page" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webstudio</title>
     <!--Основные шрифты-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,6 +31,23 @@
             ><span class="header__accent">Web</span>Studio</a
           >
 
+          <button
+            class="menu-btn"
+            type="button"
+            aria-label="кнопка меню"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg class="menu-btn__icon">
+              <use class="menu-btn__icon-open" href="./imeges/icon/icons.svg#icon-menu_open"></use>
+              <use
+                class="menu-btn__icon-close"
+                href="./imeges/icon/icons.svg#icon-menu-close"
+              ></use>
+            </svg>
+          </button>
+
+           <nav class="header__logo">
           <ul class="header__nav__items nav__page">
             <li class="header__nav__list">
               <a class="header__nav" href="./index.html">Студия</a>
@@ -67,17 +85,17 @@
         <div class="container">
           <h1 hidden>Галерея</h1>
           <!--Кнопки фильтра-->
-          <ul class="btn__list">
+          <!-- <ul class="btn__list">
             <li><button class="btn__filtr btn__activ" type="button">Все</button></li>
             <li><button class="btn__filtr" type="button">Веб-сайты</button></li>
             <li><button class="btn__filtr" type="button">Приложения</button></li>
             <li><button class="btn__filtr" type="button">Дизайн</button></li>
             <li><button class="btn__filtr" type="button">Маркетинг</button></li>
-          </ul>
+          </ul> -->
         </div>
 
         <!--Портфолио-->
-        <div class="container">
+        <!-- <div class="container">
           <ul class="portfolio__list">
             <li class="portfolio__section">
               <a class="portfolio__link" href="#">
@@ -304,7 +322,7 @@
               </a>
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </main>
 
@@ -386,5 +404,64 @@
         </div>
       </div>
     </footer>
+
+     <!-- Мобильное меню -->
+    <div class="mobile-overlay" data-menu>
+      <div class="mobile-menu">
+        <nav class="mobile-nav">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="">Студия</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="">Портфолио</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mobile-menu__grop">
+          <ul class="mobile-menu__contacts">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__phon" href="tel:+380991111111">+38 099 111 11 11</a>
+            </li>
+            <li>
+              <a class="mobile-menu__link" href="mailto:info@example.com">info@example.com</a>
+            </li>
+          </ul>
+
+          <ul class="socials-mobile">
+            <li class="socials-mobile__item">
+              <a class="socials-mobile__link" href="" target="_blank" rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
+
+            <li class="socials-mobile__item">
+              <a class="socials-mobile__link" href="" target="_blank" rel="noopener noreferrer"
+                >Twitter</a
+              >
+            </li>
+
+            <li class="socials-mobile__item">
+              <a class="socials-mobile__link" href="" target="_blank" rel="noopener noreferrer"
+                >Facebook</a
+              >
+            </li>
+
+            <li class="socials-mobile__item">
+              <a class="socials-mobile__link" href="" target="_blank" rel="noopener noreferrer"
+                >Linkedin</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+ <!--<script src="./js/modal.js"></script>-->
+ <script src="./js/menu_mobile.js"></script>
   </body>
 </html>
