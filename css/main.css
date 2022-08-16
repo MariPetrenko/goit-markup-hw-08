@@ -1036,13 +1036,7 @@ ul {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   padding: 40px;
-  width: 528px;
   background-color: var(--main-background-color);
   -webkit-box-shadow: var(--box-shedov-tim-form-btn);
           box-shadow: var(--box-shedov-tim-form-btn);
@@ -1050,6 +1044,25 @@ ul {
 }
 .modal:hover, .modal:focus {
   border-color: var(--accent-text-color);
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    position: relative;
+    margin: 50px auto 0;
+    overflow: auto;
+    max-width: 450px;
+    width: 100;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
 }
 
 .modal__btn {
@@ -1200,6 +1213,18 @@ ul {
   border: 2px solid var(--titel-text-color);
   border-radius: 4px;
   margin-right: 4px;
+}
+
+.form__chec__text {
+  font-size: 12px;
+  line-height: 1.16;
+}
+@media screen and (min-width: 1200px) {
+  .form__chec__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .form__chec__link {
