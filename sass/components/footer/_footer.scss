@@ -15,13 +15,19 @@
 .footer-wrap {
   @media screen and (min-width: 768px) {
     display: flex;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     justify-content: space-between;
     padding: 0 74px 0 61px;
+    align-items: baseline;
   }
 }
 
 .footer__section {
-  text-align: center;
+  @media screen and(max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer__logo {

@@ -593,6 +593,7 @@ ul {
 
 .team__img {
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .team__titel__person {
@@ -761,15 +762,24 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-wrap {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 0 74px 0 61px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
-.footer__section {
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .footer__section {
+    text-align: center;
+  }
 }
 
 .footer__logo {
@@ -821,8 +831,10 @@ ul {
 }
 
 /*Социальные сети футер*/
-.footer__social__list {
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .footer__social__list {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 767px) {
   .footer__social__list {

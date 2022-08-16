@@ -1,7 +1,8 @@
 /*Социальные сети футер*/
 .footer__social__list {
-  text-align: center;
-
+  @media screen and(max-width: 1199px) {
+    text-align: center;
+  }
   @media screen and (max-width: 767px) {
     margin-top: 60px;
   }
