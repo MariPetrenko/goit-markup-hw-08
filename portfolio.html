@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="A description of the page" />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webstudio</title>
     <!--Основные шрифты-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,24 +26,24 @@
     <!--шапка страницы-->
     <header class="header section">
       <div class="container main__nav">
-          <a class="header__link" lang="en" href="./index.html"
-            ><span class="header__accent">Web</span>Studio</a
-          >
+        <a class="header__link" lang="en" href="./index.html"
+          ><span class="header__accent">Web</span>Studio</a
+        >
 
-          <button
-            class="menu-btn"
-            type="button"
-            aria-label="кнопка меню"
-            aria-expanded="false"
-            data-menu-button
-          >
-            <svg class="menu-btn__icon">
-              <use class="menu-btn__icon-open" href="./imeges/icon/icons.svg#icon-menu_open"></use>
-              <use class="menu-btn__icon-close" href="./imeges/icon/icons.svg#icon-menu-close"></use>
-            </svg>
-          </button>
+        <button
+          class="menu-btn"
+          type="button"
+          aria-label="кнопка меню"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg class="menu-btn__icon">
+            <use class="menu-btn__icon-open" href="./imeges/icon/icons.svg#icon-menu_open"></use>
+            <use class="menu-btn__icon-close" href="./imeges/icon/icons.svg#icon-menu-close"></use>
+          </svg>
+        </button>
 
-           <nav class="header__logo">
+        <nav class="header__logo">
           <ul class="header__nav__items nav__page">
             <li class="header__nav__list">
               <a class="header__nav" href="./index.html">Студия</a>
@@ -53,7 +53,7 @@
             </li>
             <li class="header__nav__list"><a class="header__nav" href="">Контакты</a></li>
           </ul>
-        
+        </nav>
 
         <ul class="header__contact__items">
           <li class="header__list">
@@ -79,7 +79,7 @@
     <main>
       <div class="section">
         <div class="container">
-          <h1 hidden>Галерея</h1> 
+          <h1 hidden>Галерея</h1>
           <!--Кнопки фильтра-->
           <ul class="btn__list">
             <li><button class="btn__filtr btn__activ" type="button">Все</button></li>
@@ -88,7 +88,7 @@
             <li><button class="btn__filtr" type="button">Дизайн</button></li>
             <li><button class="btn__filtr" type="button">Маркетинг</button></li>
           </ul>
-        </div> 
+        </div>
 
         <!--Портфолио-->
         <div class="container">
@@ -98,48 +98,63 @@
                 <div class="portfolio__thumb">
                   <picture>
                     <source
-                  srcset="./imeges/portfolio/card1_lg.webp 1x, ./imeges/portfolio/card1_lg@2x.webp 2x"
-                  media="(min-width: 1200px)"
-                  type="image/webp"
-                />
+                      srcset="
+                        ./imeges/portfolio/card1_lg.webp    1x,
+                        ./imeges/portfolio/card1_lg@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card1_lg.jpeg 1x, ./imeges/portfolio/card1_lg@2x.jpeg 2x"
-                  media="(min-width: 1200px)"
-                  type="image/jpeg"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card1_lg.jpeg    1x,
+                        ./imeges/portfolio/card1_lg@2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card1_md.webp 1x, ./imeges/portfolio/card1_md@2x.webp 2x"
-                  media="(min-width: 768px)"
-                  type="image/webp"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card1_md.webp    1x,
+                        ./imeges/portfolio/card1_md@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card1_md.jpeg 1x, ./imeges/portfolio/card1_md@2x.jpeg 2x"
-                  media="(min-width: 768px)"
-                  type="image/jpeg"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card1_md.jpeg    1x,
+                        ./imeges/portfolio/card1_md@2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card1_sm.webp 1x, ./imeges/portfolio/card1_sm@2x.webp 2x"
-                  media="(max-width: 767px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="./imeges/portfolio/card1_sm@2x.jpeg 2x"
-                  media="(max-width: 767px)"
-                  type="image/jpeg"
-                />
-                 <img
-                    class="portfolio__img"
-                    src="./imeges/portfolio/card1_sm.jpg"
-                    alt="Веб-сайт"
-                    width="370"
-                    height="294"
-                  />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card1_sm.webp    1x,
+                        ./imeges/portfolio/card1_sm@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./imeges/portfolio/card1_sm@2x.jpeg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./imeges/portfolio/card1_sm.jpg"
+                      alt="Веб-сайт"
+                      width="370"
+                      height="294"
+                    />
                   </picture>
-                 
+
                   <div class="portfolio__overlay">
                     <p class="portfolio__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -159,49 +174,64 @@
               <a class="portfolio__link" href="#">
                 <div class="portfolio__thumb">
                   <picture>
-                       <source
-                  srcset="./imeges/portfolio/card2_lg.webp 1x, ./imeges/portfolio/card2_lg@2x.webp 2x"
-                  media="(min-width: 1200px)"
-                  type="image/webp"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card2_lg.webp    1x,
+                        ./imeges/portfolio/card2_lg@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card2_lg.jpeg 1x, ./imeges/portfolio/card2_lg@2x.jpeg 2x"
-                  media="(min-width: 1200px)"
-                  type="image/jpeg"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card2_lg.jpeg    1x,
+                        ./imeges/portfolio/card2_lg@2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card2_md.webp 1x, ./imeges/portfolio/card2_md@2x.webp 2x"
-                  media="(min-width: 768px)"
-                  type="image/webp"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card2_md.webp    1x,
+                        ./imeges/portfolio/card2_md@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card2_md.jpeg 1x, ./imeges/portfolio/card2_md@2x.jpeg 2x"
-                  media="(min-width: 768px)"
-                  type="image/jpeg"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card2_md.jpeg    1x,
+                        ./imeges/portfolio/card2_md@2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card2_sm.webp 1x, ./imeges/portfolio/card2_sm@2x.webp 2x"
-                  media="(max-width: 767px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="./imeges/portfolio/card2_sm@2x.jpeg 2x"
-                  media="(max-width: 767px)"
-                  type="image/jpeg"
-                />
-                 <img
-                    class="portfolio__img"
-                    src="./imeges/portfolio/card2_sm.jpg"
-                    alt="постер команды"
-                    width="370"
-                    height="294"
-                  />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card2_sm.webp    1x,
+                        ./imeges/portfolio/card2_sm@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./imeges/portfolio/card2_sm@2x.jpeg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./imeges/portfolio/card2_sm.jpg"
+                      alt="постер команды"
+                      width="370"
+                      height="294"
+                    />
                   </picture>
-                 
+
                   <div class="portfolio__overlay">
                     <p class="portfolio__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -221,49 +251,64 @@
               <a class="portfolio__link" href="#">
                 <div class="portfolio__thumb">
                   <picture>
-                         <source
-                  srcset="./imeges/portfolio/card3_lg.webp 1x, ./imeges/portfolio/card3_lg@2x.webp 2x"
-                  media="(min-width: 1200px)"
-                  type="image/webp"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card3_lg.webp    1x,
+                        ./imeges/portfolio/card3_lg@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card3_lg.jpeg 1x, ./imeges/portfolio/card3_lg@2x.jpeg 2x"
-                  media="(min-width: 1200px)"
-                  type="image/jpeg"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card3_lg.jpeg    1x,
+                        ./imeges/portfolio/card3_lg@2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card3_md.webp 1x, ./imeges/portfolio/card3_md@2x.webp 2x"
-                  media="(min-width: 768px)"
-                  type="image/webp"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card3_md.webp    1x,
+                        ./imeges/portfolio/card3_md@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card3_md.jpeg 1x, ./imeges/portfolio/card3_md@2x.jpeg 2x"
-                  media="(min-width: 768px)"
-                  type="image/jpeg"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card3_md.jpeg    1x,
+                        ./imeges/portfolio/card3_md@2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card3_sm.webp 1x, ./imeges/portfolio/card3_sm@2x.webp 2x"
-                  media="(max-width: 767px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="./imeges/portfolio/card3_sm@2x.jpeg 2x"
-                  media="(max-width: 767px)"
-                  type="image/jpeg"
-                />
-                <img
-                    class="portfolio__img"
-                    src="./imeges/portfolio/card3_sm.jpg"
-                    alt="логотип ресторана"
-                    width="370"
-                    height="294"
-                  />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card3_sm.webp    1x,
+                        ./imeges/portfolio/card3_sm@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./imeges/portfolio/card3_sm@2x.jpeg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./imeges/portfolio/card3_sm.jpg"
+                      alt="логотип ресторана"
+                      width="370"
+                      height="294"
+                    />
                   </picture>
-                  
+
                   <div class="portfolio__overlay">
                     <p class="portfolio__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -283,50 +328,65 @@
               <a class="portfolio__link" href="#">
                 <div class="portfolio__thumb">
                   <picture>
-                  <source
-                  srcset="./imeges/portfolio/card4_lg.webp 1x, ./imeges/portfolio/card4_lg@2x.webp 2x"
-                  media="(min-width: 1200px)"
-                  type="image/webp"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card4_lg.webp    1x,
+                        ./imeges/portfolio/card4_lg@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card4_lg.jpeg 1x, ./imeges/portfolio/card4_lg@2x.jpeg 2x"
-                  media="(min-width: 1200px)"
-                  type="image/jpeg"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card4_lg.jpeg    1x,
+                        ./imeges/portfolio/card4_lg@2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card4_md.webp 1x, ./imeges/portfolio/card4_md@2x.webp 2x"
-                  media="(min-width: 768px)"
-                  type="image/webp"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card4_md.webp    1x,
+                        ./imeges/portfolio/card4_md@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card4_md.jpeg 1x, ./imeges/portfolio/card4_md@2x.jpeg 2x"
-                  media="(min-width: 768px)"
-                  type="image/jpeg"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card4_md.jpeg    1x,
+                        ./imeges/portfolio/card4_md@2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card4_sm.webp 1x, ./imeges/portfolio/card4_sm@2x.webp 2x"
-                  media="(max-width: 767px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="./imeges/portfolio/card4_sm@2x.jpeg 2x"
-                  media="(max-width: 767px)"
-                  type="image/jpeg"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card4_sm.webp    1x,
+                        ./imeges/portfolio/card4_sm@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./imeges/portfolio/card4_sm@2x.jpeg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
 
-                <img
-                    class="portfolio__img"
-                    src="./imeges/portfolio/card4_sm.jpg"
-                    alt="наушники"
-                    width="370"
-                    height="294"
-                  />
+                    <img
+                      class="portfolio__img"
+                      src="./imeges/portfolio/card4_sm.jpg"
+                      alt="наушники"
+                      width="370"
+                      height="294"
+                    />
                   </picture>
-                  
+
                   <div class="portfolio__overlay">
                     <p class="portfolio__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -346,50 +406,65 @@
               <a class="portfolio__link" href="#">
                 <div class="portfolio__thumb">
                   <picture>
-                  <source
-                  srcset="./imeges/portfolio/card5_lg.webp 1x, ./imeges/portfolio/card5_lg@2x.webp 2x"
-                  media="(min-width: 1200px)"
-                  type="image/webp"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card5_lg.webp    1x,
+                        ./imeges/portfolio/card5_lg@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card5_lg.jpeg 1x, ./imeges/portfolio/card5_lg@2x.jpeg 2x"
-                  media="(min-width: 1200px)"
-                  type="image/jpeg"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card5_lg.jpeg    1x,
+                        ./imeges/portfolio/card5_lg@2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card5_md.webp 1x, ./imeges/portfolio/card5_md@2x.webp 2x"
-                  media="(min-width: 768px)"
-                  type="image/webp"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card5_md.webp    1x,
+                        ./imeges/portfolio/card5_md@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card5_md.jpeg 1x, ./imeges/portfolio/card5_md@2x.jpeg 2x"
-                  media="(min-width: 768px)"
-                  type="image/jpeg"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card5_md.jpeg    1x,
+                        ./imeges/portfolio/card5_md@2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card5_sm.webp 1x, ./imeges/portfolio/card5_sm@2x.webp 2x"
-                  media="(max-width: 767px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="./imeges/portfolio/card5_sm@2x.jpeg 2x"
-                  media="(max-width: 767px)"
-                  type="image/jpeg"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card5_sm.webp    1x,
+                        ./imeges/portfolio/card5_sm@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./imeges/portfolio/card5_sm@2x.jpeg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
 
-                  <img
-                    class="portfolio__img"
-                    src="./imeges/portfolio/card5_sm.jpg"
-                    alt="бокс проект"
-                    width="370"
-                    height="294"
-                  />
+                    <img
+                      class="portfolio__img"
+                      src="./imeges/portfolio/card5_sm.jpg"
+                      alt="бокс проект"
+                      width="370"
+                      height="294"
+                    />
                   </picture>
-                
+
                   <div class="portfolio__overlay">
                     <p class="portfolio__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -409,49 +484,64 @@
               <a class="portfolio__link" href="#">
                 <div class="portfolio__thumb">
                   <picture>
-                  <source
-                  srcset="./imeges/portfolio/card6_lg.webp 1x, ./imeges/portfolio/card6_lg@2x.webp 2x"
-                  media="(min-width: 1200px)"
-                  type="image/webp"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card6_lg.webp    1x,
+                        ./imeges/portfolio/card6_lg@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card6_lg.jpeg 1x, ./imeges/portfolio/card6_lg@2x.jpeg 2x"
-                  media="(min-width: 1200px)"
-                  type="image/jpeg"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card6_lg.jpeg    1x,
+                        ./imeges/portfolio/card6_lg@2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card6_md.webp 1x, ./imeges/portfolio/card6_md@2x.webp 2x"
-                  media="(min-width: 768px)"
-                  type="image/webp"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card6_md.webp    1x,
+                        ./imeges/portfolio/card6_md@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card6_md.jpeg 1x, ./imeges/portfolio/card6_md@2x.jpeg 2x"
-                  media="(min-width: 768px)"
-                  type="image/jpeg"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card6_md.jpeg    1x,
+                        ./imeges/portfolio/card6_md@2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card6_sm.webp 1x, ./imeges/portfolio/card6_sm@2x.webp 2x"
-                  media="(max-width: 767px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="./imeges/portfolio/card6_sm@2x.jpeg 2x"
-                  media="(max-width: 767px)"
-                  type="image/jpeg"
-                />
-                   <img
-                    class="portfolio__img"
-                    src="./imeges/portfolio/card6_sm.jpg"
-                    alt="изображение монитора"
-                    width="370"
-                    height="294"
-                  />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card6_sm.webp    1x,
+                        ./imeges/portfolio/card6_sm@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./imeges/portfolio/card6_sm@2x.jpeg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./imeges/portfolio/card6_sm.jpg"
+                      alt="изображение монитора"
+                      width="370"
+                      height="294"
+                    />
                   </picture>
-               
+
                   <div class="portfolio__overlay">
                     <p class="portfolio__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -471,50 +561,65 @@
               <a class="portfolio__link" href="#">
                 <div class="portfolio__thumb">
                   <picture>
-                  <source
-                  srcset="./imeges/portfolio/card7_lg.webp 1x, ./imeges/portfolio/card7_lg@2x.webp 2x"
-                  media="(min-width: 1200px)"
-                  type="image/webp"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card7_lg.webp    1x,
+                        ./imeges/portfolio/card7_lg@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card7_lg.jpeg 1x, ./imeges/portfolio/card7_lg@2x.jpeg 2x"
-                  media="(min-width: 1200px)"
-                  type="image/jpeg"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card7_lg.jpeg    1x,
+                        ./imeges/portfolio/card7_lg@2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card7_md.webp 1x, ./imeges/portfolio/card7_md@2x.webp 2x"
-                  media="(min-width: 768px)"
-                  type="image/webp"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card7_md.webp    1x,
+                        ./imeges/portfolio/card7_md@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card7_md.jpeg 1x, ./imeges/portfolio/card7_md@2x.jpeg 2x"
-                  media="(min-width: 768px)"
-                  type="image/jpeg"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card7_md.jpeg    1x,
+                        ./imeges/portfolio/card7_md@2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card7_sm.webp 1x, ./imeges/portfolio/card7_sm@2x.webp 2x"
-                  media="(max-width: 767px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="./imeges/portfolio/card7_sm@2x.jpeg 2x"
-                  media="(max-width: 767px)"
-                  type="image/jpeg"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card7_sm.webp    1x,
+                        ./imeges/portfolio/card7_sm@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./imeges/portfolio/card7_sm@2x.jpeg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
 
-                 <img
-                    class="portfolio__img"
-                    src="./imeges/portfolio/card7_sm.jpg"
-                    alt="дизайн книги"
-                    width="370"
-                    height="294"
-                  />
+                    <img
+                      class="portfolio__img"
+                      src="./imeges/portfolio/card7_sm.jpg"
+                      alt="дизайн книги"
+                      width="370"
+                      height="294"
+                    />
                   </picture>
-                 
+
                   <div class="portfolio__overlay">
                     <p class="portfolio__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -534,49 +639,64 @@
               <a class="portfolio__link" href="#">
                 <div class="portfolio__thumb">
                   <picture>
-                  <source
-                  srcset="./imeges/portfolio/card8_lg.webp 1x, ./imeges/portfolio/card8_lg@2x.webp 2x"
-                  media="(min-width: 1200px)"
-                  type="image/webp"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card8_lg.webp    1x,
+                        ./imeges/portfolio/card8_lg@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card8_lg.jpeg 1x, ./imeges/portfolio/card8_lg@2x.jpeg 2x"
-                  media="(min-width: 1200px)"
-                  type="image/jpeg"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card8_lg.jpeg    1x,
+                        ./imeges/portfolio/card8_lg@2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card8_md.webp 1x, ./imeges/portfolio/card8_md@2x.webp 2x"
-                  media="(min-width: 768px)"
-                  type="image/webp"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card8_md.webp    1x,
+                        ./imeges/portfolio/card8_md@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card8_md.jpeg 1x, ./imeges/portfolio/card8_md@2x.jpeg 2x"
-                  media="(min-width: 768px)"
-                  type="image/jpeg"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card8_md.jpeg    1x,
+                        ./imeges/portfolio/card8_md@2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card8_sm.webp 1x, ./imeges/portfolio/card8_sm@2x.webp 2x"
-                  media="(max-width: 767px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="./imeges/portfolio/card8_sm@2x.jpeg 2x"
-                  media="(max-width: 767px)"
-                  type="image/jpeg"
-                />
-                  <img
-                    class="portfolio__img"
-                    src="./imeges/portfolio/card8_sm.jpg"
-                    alt="макет логотипа"
-                    width="370"
-                    height="294"
-                  />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card8_sm.webp    1x,
+                        ./imeges/portfolio/card8_sm@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./imeges/portfolio/card8_sm@2x.jpeg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./imeges/portfolio/card8_sm.jpg"
+                      alt="макет логотипа"
+                      width="370"
+                      height="294"
+                    />
                   </picture>
-                
+
                   <div class="portfolio__overlay">
                     <p class="portfolio__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -595,50 +715,65 @@
             <li class="portfolio__section">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__thumb">
-                  <picture>     
-                  <source
-                  srcset="./imeges/portfolio/card9_lg.webp 1x, ./imeges/portfolio/card9_lg@2x.webp 2x"
-                  media="(min-width: 1200px)"
-                  type="image/webp"
-                />
+                  <picture>
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card9_lg.webp    1x,
+                        ./imeges/portfolio/card9_lg@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card9_lg.jpeg 1x, ./imeges/portfolio/card9_lg@2x.jpeg 2x"
-                  media="(min-width: 1200px)"
-                  type="image/jpeg"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card9_lg.jpeg    1x,
+                        ./imeges/portfolio/card9_lg@2x.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card9_md.webp 1x, ./imeges/portfolio/card9_md@2x.webp 2x"
-                  media="(min-width: 768px)"
-                  type="image/webp"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card9_md.webp    1x,
+                        ./imeges/portfolio/card9_md@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card9_md.jpeg 1x, ./imeges/portfolio/card8_md@2x.jpeg 2x"
-                  media="(min-width: 768px)"
-                  type="image/jpeg"
-                />
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card9_md.jpeg    1x,
+                        ./imeges/portfolio/card8_md@2x.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
 
-                <source
-                  srcset="./imeges/portfolio/card9_sm.webp 1x, ./imeges/portfolio/card9_sm@2x.webp 2x"
-                  media="(max-width: 767px)"
-                  type="image/webp"
-                />
-                <source
-                  srcset="./imeges/portfolio/card9_sm@2x.jpeg 2x"
-                  media="(max-width: 767px)"
-                  type="image/jpeg"
-                />
-                 <img
-                    class="portfolio__img"
-                    src="./imeges/portfolio/card9_sm.jpg"
-                    alt="проект приложения"
-                    width="370"
-                    height="294"
-                  />
-              </picture>
-                 
+                    <source
+                      srcset="
+                        ./imeges/portfolio/card9_sm.webp    1x,
+                        ./imeges/portfolio/card9_sm@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./imeges/portfolio/card9_sm@2x.jpeg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="./imeges/portfolio/card9_sm.jpg"
+                      alt="проект приложения"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <div class="portfolio__overlay">
                     <p class="portfolio__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -660,65 +795,67 @@
 
     <!--Подвал-->
     <footer class="footer">
-
-       <!-- Контакты футер -->
+      <!-- Контакты футер -->
       <div class="container">
-         <div class="footer-wrap">
-        <div class="footer__section">
-          <a class="footer__logo" lang="en" href="./index.html">
-            <span class="footer__logo__accent">Web</span>Studio</a
-          >
-          <address class="footer__address">
-            <ul class="footer__address__list">
-              <li class="footer__contact__list">
-                <a class="footer__contact__adress" href="google.maps.г.Киев,пр-т-Леси-Украинки,26">
-                  г. Киев, пр-т Леси Украинки, 26</a
-                >
+        <div class="footer-wrap">
+          <div class="footer__section">
+            <a class="footer__logo" lang="en" href="./index.html">
+              <span class="footer__logo__accent">Web</span>Studio</a
+            >
+            <address class="footer__address">
+              <ul class="footer__address__list">
+                <li class="footer__contact__list">
+                  <a
+                    class="footer__contact__adress"
+                    href="google.maps.г.Киев,пр-т-Леси-Украинки,26"
+                  >
+                    г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="footer__contact__list">
+                  <a class="footer__contact" href="mailto:info@example.com">info@example.com</a>
+                </li>
+                <li class="footer__contact__list">
+                  <a class="footer__contact" href="tel+380991111111">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <!--Соц.сети подвл-->
+
+          <div class="footer__social__list">
+            <p class="footer__titel__link">Присоединяйтесь</p>
+            <ul class="footer__socials">
+              <li class="footer__link__list">
+                <a class="footer__linc__icon" href="">
+                  <svg class="footer__icon" width="20px" height="20px">
+                    <use href="./imeges/icon/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__contact__list">
-                <a class="footer__contact" href="mailto:info@example.com">info@example.com</a>
+              <li class="footer__link__list">
+                <a class="footer__linc__icon" href="">
+                  <svg class="footer__icon" width="20px" height="20px">
+                    <use href="./imeges/icon/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__contact__list">
-                <a class="footer__contact" href="tel+380991111111">+38 099 111 11 11</a>
+              <li class="footer__link__list">
+                <a class="footer__linc__icon" href="">
+                  <svg class="footer__icon" width="20px" height="20px">
+                    <use href="./imeges/icon/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__link__list">
+                <a class="footer__linc__icon" href="">
+                  <svg class="footer__icon" width="20px" height="20px">
+                    <use href="./imeges/icon/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <!--Соц.сети подвл-->
-
-        <div class="footer__social__list">
-          <p class="footer__titel__link">Присоединяйтесь</p>
-          <ul class="footer__socials">
-            <li class="footer__link__list">
-              <a class="footer__linc__icon" href="">
-                <svg class="footer__icon" width="20px" height="20px">
-                  <use href="./imeges/icon/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__link__list">
-              <a class="footer__linc__icon" href="">
-                <svg class="footer__icon" width="20px" height="20px">
-                  <use href="./imeges/icon/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__link__list">
-              <a class="footer__linc__icon" href="">
-                <svg class="footer__icon" width="20px" height="20px">
-                  <use href="./imeges/icon/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__link__list">
-              <a class="footer__linc__icon" href="">
-                <svg class="footer__icon" width="20px" height="20px">
-                  <use href="./imeges/icon/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+          </div>
         </div>
 
         <!-- Подписка на рассылку-->
@@ -741,7 +878,7 @@
       </div>
     </footer>
 
-     <!-- Мобильное меню -->
+    <!-- Мобильное меню -->
     <div class="mobile-overlay" data-menu>
       <div class="mobile-menu">
         <nav class="mobile-nav">
@@ -797,7 +934,7 @@
       </div>
     </div>
 
- <!--<script src="./js/modal.js"></script>-->
- <script src="./js/menu_mobile.js"></script>
+    <!--<script src="./js/modal.js"></script>-->
+    <script src="./js/menu_mobile.js"></script>
   </body>
 </html>

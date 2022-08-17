@@ -1725,7 +1725,7 @@ ul {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--titel-text-color);
+  color: var(--primery-text-color);
 }
 
 .socials-mobile {
