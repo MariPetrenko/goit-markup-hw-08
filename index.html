@@ -148,27 +148,69 @@
           <h2 class="gallery__titel">Чем мы занимаемся</h2>
           <ul class="gallery__list__foto">
             <li class="gellery__list">
-              <img
-                src="./imeges/box1.jpg"
-                alt="стол с планшетоми клавиатурой и схемой работы"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./imeges/works/desktops_lg.webp 1x, ./imeges/works/desktops_lg@2x.webp 2x"
+                  media="(max-width: 1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="./imeges/works/desktops_lg@2x.jpeg 2x"
+                  media="(max-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./imeges/works/desktops_lg.jpg"
+                  alt="стол с планшетоми клавиатурой и схемой работы"
+                  width="370"
+                />
+              </picture>
+
               <div class="gellery__modal">
                 <p class="gellery__text">Декстопные приложения</p>
               </div>
             </li>
             <li class="gellery__list">
-              <img
-                src="./imeges/box2.jpg"
-                alt="телефон и ноутбук синхронизация телефона с ноутбуком"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./imeges/works/mobiles_lg.webp 1x, ./imeges/works/mobiles_lg@2x.webp 2x"
+                  media="(max-width: 1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="./imeges/works/mobiles_lg@2x.jpeg 2x"
+                  media="(max-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./imeges/works/mobiles_lg.jpg"
+                  alt="телефон и ноутбук синхронизация телефона с ноутбуком"
+                  width="370"
+                />
+              </picture>
+
               <div class="gellery__modal">
                 <p class="gellery__text">Мобильные приложения</p>
               </div>
             </li>
             <li class="gellery__list">
-              <img src="./imeges/box3.jpg" alt="выбор цветового тона" width="370" />
+              <picture>
+                <source
+                  srcset="./imeges/works/design_lg.webp 1x, ./imeges/works/design_lg@2x.webp 2x"
+                  media="(max-width: 1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="./imeges/works/design_lg@2x.jpeg 2x"
+                  media="(max-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img src="./imeges/works/design_lg.jpg" alt="выбор цветового тона" width="370" />
+              </picture>
+
               <div class="gellery__modal">
                 <p class="gellery__text">Дизайнерские решения</p>
               </div>
