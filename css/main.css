@@ -308,9 +308,9 @@ ul {
   margin-right: auto;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../imeges/hero/header_sm.png");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imeges/hero/header_sm.png");
-  background-image: -webkit-image-set(url("../imeges/hero/header_sm.webp") 1x);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../imeges/header_sm.png");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imeges/header_sm.png");
+  background-image: -webkit-image-set(url("../imeges/header_sm.webp") 1x);
 }
 @media screen and (max-width: 767px) {
   .logo__section {
@@ -320,9 +320,9 @@ ul {
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-moz-min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .logo__section {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../imeges/hero/header_sm@2x.png");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imeges/hero/header_sm@2x.png");
-    background-image: -webkit-image-set(url("../imeges/hero/header_sm@2x.webp") 2x);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../imeges/header_sm@2x.png");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imeges/header_sm@2x.png");
+    background-image: -webkit-image-set(url("../imeges/header_sm@2x.webp") 2x);
   }
 }
 @media screen and (min-width: 768px) {
