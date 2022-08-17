@@ -21,12 +21,12 @@ $logo-imeg-gradient: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 4
     padding-bottom: 118px;
   }
 
-  background-image: $logo-imeg-gradient, url('../imeges/hero/header_sm.png');
-  background-image: -webkit-image-set(url('../imeges/hero/header_sm.webp') 1x);
+  background-image: $logo-imeg-gradient, url('../imeges/header_sm.png');
+  background-image: -webkit-image-set(url('../imeges/header_sm.webp') 1x);
 
   @include mq(retina) {
-    background-image: $logo-imeg-gradient, url('../imeges/hero/header_sm@2x.png');
-    background-image: -webkit-image-set(url('../imeges/hero/header_sm@2x.webp') 2x);
+    background-image: $logo-imeg-gradient, url('../imeges/header_sm@2x.png');
+    background-image: -webkit-image-set(url('../imeges/header_sm@2x.webp') 2x);
   }
 
   @include mq(tablet) {
