@@ -298,16 +298,20 @@ ul {
 
 /*Логотип страницы*/
 .logo__section {
-  padding-top: 200px;
-  padding-bottom: 200px;
   text-align: center;
   background-color: var(--section-fond-color);
   max-width: 1600px;
-  min-height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .logo__section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    min-height: 600px;
+  }
 }
 @media screen and (max-width: 767px) {
   .logo__section {
@@ -315,42 +319,48 @@ ul {
     padding-bottom: 118px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../imeges/header_sm.png");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imeges/header_sm.png");
-    background-image: -webkit-image-set(url("../imeges/header_sm.webp") 1x);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), -webkit-image-set(url("../imeges/header_sm.webp") 1x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../imeges/header_sm.webp") 1x);
   }
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-moz-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .logo__section {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../imeges/header_sm@2x.png");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imeges/header_sm@2x.png");
-    background-image: -webkit-image-set(url("../imeges/header_sm@2x.webp") 2x);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), -webkit-image-set(url("../imeges/header_sm@2x.webp") 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../imeges/header_sm@2x.webp") 2x);
   }
 }
 @media screen and (min-width: 768px) {
   .logo__section {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../imeges/header_md.png");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imeges/header_md.png");
-    background-image: -webkit-image-set(url("../imeges/header_md.webp") 1x);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), -webkit-image-set(url("../imeges/header_md.webp") 1x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../imeges/header_md.webp") 1x);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .logo__section {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../imeges/header_md@2x.png");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imeges/header_md@2x.png");
-    background-image: -webkit-image-set(url("../imeges/header_md@2x.webp") 2x);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), -webkit-image-set(url("../imeges/header_md@2x.webp") 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../imeges/header_md@2x.webp") 2x);
   }
 }
 @media screen and (min-width: 1200px) {
   .logo__section {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../imeges/header_lg.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imeges/header_lg.jpg");
-    background-image: -webkit-image-set(url("../imeges/header_lg.webp") 1x);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), -webkit-image-set(url("../imeges/header_lg.webp") 1x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../imeges/header_lg.webp") 1x);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-moz-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .logo__section {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../imeges/header_lg@2x.png");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imeges/header_lg@2x.png");
-    background-image: -webkit-image-set(url("../imeges/header_lg@2x.webp") 2x);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), -webkit-image-set(url("../imeges/header_lg@2x.webp") 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../imeges/header_lg@2x.webp") 2x);
   }
 }
 
@@ -571,8 +581,8 @@ ul {
   width: 100%;
   text-align: center;
   border-radius: 0px 0px 4px 4px;
-  -webkit-box-shadow: var(--box-shedov);
-          box-shadow: var(--box-shedov);
+  -webkit-box-shadow: var(--box-shedov-tim-form-btn);
+          box-shadow: var(--box-shedov-tim-form-btn);
   background: var(--main-background-color);
 }
 .team__section:last-child {
@@ -669,9 +679,13 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+  row-gap: 30px;
 }
 
 .clients__cards {
@@ -706,7 +720,7 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
+  max-width: 226px;
   height: 92px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
@@ -843,6 +857,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .footer__social__list {
+    margin-top: 15px;
     margin-left: 70px;
   }
 }
@@ -901,8 +916,10 @@ ul {
 }
 
 /*Подписка на рассылку*/
-.sub {
-  margin-top: 60px;
+@media screen and (max-width: 1199px) {
+  .sub {
+    margin-top: 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .sub {
@@ -1002,6 +1019,11 @@ ul {
   border: transparent;
   cursor: pointer;
 }
+@media screen and (max-width: 767px) {
+  .footer__sub__btn {
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__sub__btn {
     margin-left: 12px;
@@ -1028,7 +1050,12 @@ ul {
   width: 100%;
   height: 100%;
   background-color: var(--shedov-backdrop);
+  overflow-y: scroll;
   opacity: 1;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--animation);
+          transition-timing-function: var(--animation);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -1363,7 +1390,8 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 8px;
-  margin-bottom: 50px;
+  row-gap: 15px;
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 767px) {
   .btn__list {
@@ -1506,8 +1534,8 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(110%);
+          transform: translateY(110%);
   -webkit-transition: -webkit-transform 250ms var(--animation);
   transition: -webkit-transform 250ms var(--animation);
   transition: transform 250ms var(--animation);
@@ -1521,6 +1549,11 @@ ul {
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--main-background-color);
+}
+@media screen and (max-width: 479px) {
+  .portfolio__text {
+    font-size: 14px;
+  }
 }
 
 .portfolio__card {
@@ -1688,6 +1721,9 @@ ul {
           transition-timing-function: var(--animation);
 }
 .mobile-nav__link:hover, .mobile-nav__link:focus {
+  color: var(--accent-text-color);
+}
+.mobile-nav__link.current {
   color: var(--accent-text-color);
 }
 

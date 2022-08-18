@@ -1,6 +1,8 @@
 /*Подписка на рассылку*/
 .sub {
-  margin-top: 60px;
+  @media screen and(max-width: 1199px) {
+    margin-top: 60px;
+  }
 
   @media screen and(min-width: 1200px) {
     margin-left: 95px;
@@ -62,6 +64,7 @@
 .footer__sub__btn {
   display: flex;
   align-items: center;
+
   gap: 10px;
   width: 200px;
   height: 50px;
@@ -78,6 +81,10 @@
   padding-right: 0;
   border: transparent;
   cursor: pointer;
+
+  @media screen and(max-width: 767px) {
+    margin: 0 auto;
+  }
 
   @media screen and(min-width: 1200px) {
     margin-left: 12px;
